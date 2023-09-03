@@ -1,0 +1,39 @@
+.header{
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondary;
+    
+    h2{
+        text-transform: uppercase;
+        color: $primary;
+    }
+
+    > div {
+        display: flex;
+        align-items: center;
+
+        >a{
+            color: $primary;
+            font-size: 1.1rem;
+            margin: 0 1rem;
+            transition: all 0.3s;
+            &:hover {
+                opacity: 0.5;
+            }
+            
+            >p{
+                position: absolute;
+                background-color: $tertiary;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                font : bold .7rem 'sans-serif';
+                display: grid;
+                place-items: center;
+                transform: translate(80%, -80%);
+            }
+        }
+    }
+    
+}

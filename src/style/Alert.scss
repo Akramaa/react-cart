@@ -1,0 +1,17 @@
+@import "color";
+
+
+.alert{
+    padding: 5px 10px;
+    background-color: $secondaryDark;
+    width: fit-content;
+    position: fixed;
+    border-radius: 5px;
+    color: $tertiary;
+    font-family: sans-serif, calibri;
+    left:50%;
+    top: 5rem;
+    transform: translateX(-50%);
+    z-index: 2;
+  
+}

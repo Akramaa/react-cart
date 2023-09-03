@@ -1,0 +1,53 @@
+.main{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+
+    >div {
+      padding: 1rem;
+      display: flex;
+      width: 200px;
+      height: 310px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: $tertiary;
+      gap: .2rem;
+      border-radius: 5px;
+      p{
+        font-weight: bold;
+      }
+      
+      img{
+       
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: .2s ease-in;
+        
+      }
+      &:hover img{
+        transform: scale(1.05);
+      }
+
+      >button {
+        margin-top: 1rem;
+        background-color: $secondaryDark;
+        padding: .5rem;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        border-radius: 4px;
+        box-shadow: 2px 2px $primary;
+        transition: .1s linear;
+        &:active{
+            transform: translate(2px, 2px);
+            box-shadow: none;
+        }
+      }
+    }
+}

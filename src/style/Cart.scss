@@ -1,0 +1,102 @@
+
+@import "color";
+
+
+.cart{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    height: 100vh;
+}
+main{
+    height: 100vh;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    >h1{ 
+        display: grid;
+        place-items: center;
+        color: $tertiary;
+        height: 100vh;
+    }
+   
+}
+.cartItem{
+    margin: 2rem;
+    overflow-y: auto;
+    padding:1rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    place-items: center;
+    background-color: $tertiary;
+    >img{
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        margin: auto;
+       
+        
+    }
+    >article {
+        
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-size: 1.2rem;
+       
+    }
+    >div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        >button{
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-items: center;
+            font-size: 1.3rem;
+            border: none;
+            background-color: $secondary;
+        }
+        >p{
+        
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-items: center;
+        }
+    }
+    svg{
+        color: $secondary;
+        font-size: 1.3rem ;
+        &:hover{
+            color: $secondaryDark;
+        }
+    }
+
+}
+aside{
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 100px 0 0 100px;
+    background-color: $primary;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.182);
+    >h2{
+        color: $tertiary;
+        font-size: 1.8rem;
+        margin: 1rem;
+        font-weight: 100;
+        letter-spacing: 2px;
+        &:last-of-type{
+            font-weight: 600;
+        }
+    }
+
+}
+
